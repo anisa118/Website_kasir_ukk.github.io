@@ -1,0 +1,87 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #f6f5f7;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-box {
+    width: 300px;
+    padding: 10px;
+    background: #FFFFFF;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.user-box {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.user-box input {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    border: none;
+    border-bottom: 1px solid #FC4349;
+    background: transparent;
+}
+
+.user-box input:focus {
+    box-shadow: 0 0 0 0;
+    border-bottom: 2px solid #FC4349;
+}
+
+.user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    font-size: 18px;
+    color: #FC4349;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.user-box input:focus ~ label,
+.user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #FC4349;
+    font-size: 12px;
+}
+
+.login-box form button {
+    width: 100%;
+    padding: 10px;
+    background: #FC4349;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.login-box form button:focus {
+    box-shadow: 0 0 0 0;
+}
+.error-message {
+    color: #FC4349;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 10px;
+}
+.message {
+    margin: 15px 0 0;
+    color: #b3b3b3;
+    font-size: 12px;
+}
